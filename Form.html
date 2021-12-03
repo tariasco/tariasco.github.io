@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+  <meta http-equiv="Content-Type" 
+    content="text/html; charset=UTF-8" />
+  <title>Place an Order</title>	
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="logo"><img src="img/SVG/MadewithloveLogo-2.svg" alt="logoimg" class="logoimg"></div>
+      <div class="herotext">
+        <h1 class="herotext1">KM CRAFTED</h1>
+        <h2 class="herotext2">Hand Crafed Knitwear for Everyone!</h2>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="Index.html" class="menu">Home</a></li>
+        <li><a href="Form.html" class="menu">  Place Order</a></li>
+        <li><a href="Donate.html" class="menu"> Donate</a></li>
+        <li> <a href="https://www.instagram.com/kayla.marie.maxile/" class="menu"><i class="fa fa-instagram" ></i></a></li>
+      </ul>
+    </nav>
+    <main class="formwraper">
+        <div class="formtext"><p>Ready to place an order? Let's answer some simple questions !</p></div>
+        <form action="results.html" method="post">
+            <h1 class="ordertitle">Let's Get Started!</h1>
+            <fieldset>
+              <legend class="legend1">Order Information</legend>
+              <label for="item">What would you like to order? </label>
+              <select id="item" name="user_item">
+                <optgroup label="I'd like to order...">
+                  <option value="Beanie">Beanie</option>
+                  <option value="Sweater">Sweater</option>
+                  <option value="Head Band">Head Band</option>
+                  <option value="Stuffed">Stuffed animal</option>
+                </optgroup>
+              </select>
+              <label for="name">Pick up to three colors separated by (visit this <a href="https://www.michaels.com/impeccable-solid-yarn-by-loops-and-threads-/M10108918.html?dwvar_M10108918_size=4.5%20oz&dwvar_M10108918_color=Amethyst" class="colorlink">link</a> to 
+                see available yarn colors)</label> 
+              <input type="text" id="color" placeholder="Color" value="" required>
+              <label for="item"> if applicable, select a size </label>
+                 <select id="item" name="user_item" >
+                   <optgroup label="I'd like to order...">
+                     <option value="Small">S</option>
+                     <option value="Medium">M</option>
+                     <option value="Large">L</option>
+                     <option value="Extra Large">XL</option>
+                     <option value="N/A">N/A</option>
+                   </optgroup>
+                 </select>
+                 <label for="additional">Any additional requests?</label>
+                 <textarea id="additional" name="user_ request" placeholder="Plase share any additional request or specification"></textarea>          
+            </fieldset>
+            <fieldset class="fieldset2">
+                <legend >Personal Information</legend>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="user_name" placeholder="your name" value="" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="user_email" placeholder="email@domain.com" value="" required>
+           </fieldset>
+            <div class="formbuttom"><button type="submit">Place Order!</button>
+            <button type="reset">Reset</button></div>
+
+            <div class="clarification">
+                <p class="submessage">Upon submission, you will receive a confirmation email. Once we have reviewed your order, we will contact you with a price for your order and a pick up location.</p>
+            </div>
+        </form>
+    </main>
+    <footer>
+      <div class="contact">
+        <p>Contact |</p>
+        <div class="social">
+          <a href="https://www.instagram.com/kayla.marie.maxile/" class="menu">Instagram <i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="buttons">
+      <div class="button1" id="button"> <a href="Form.html">Place an Order!</a></div>
+      <div class="button2" id="button">  <a href="Donate.html" >Donate!</a></div>
+      </div>
+    </footer>
+  </body>
+</html>

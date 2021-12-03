@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,600;1,600&family=Vollkorn:ital,wght@0,800;1,400&family=Zen+Kurenaido&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0 auto;
+}
+/* header and general set up*/ 
+Body{
+    display: grid;
+    grid-template-rows: fit-content 25vh auto 20vh;
+    width: 100%;
+    margin: 0;
+}
+header{
+    grid-row: 1/2;
+    display: flex;
+    background-color: rgb(134, 83, 39);
+    border-radius: 0.2rem;
+    font-family: 'bodoni moda', serif;
+    justify-content: flex-start;
+    gap: 0px;
+    
+}
+.logo{
+    width: 40%;
+    display: flex;
+    margin-left: 0;
+}
+.logoimg{
+    width: 100%;
+    margin-left: 5px;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+.herotext{
+    justify-self: left;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.3rem;
+    margin-right: 5rem;
+    
+}
+.herotext1{
+    font-size: 2em;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+.herotext2{
+    font-size: 1.2em;
+    font-weight: bolder;
+    margin-top: 0;
+}
+nav{
+    grid-row: 2/3;
+    background-color: rgb(237, 157, 0);
+    width: 100%;
+}
+ul{
+    display: flex;
+    gap: 20px;
+    font-family: 'Vollkorn', serif;
+    justify-content: end;
+    margin-right: 1rem;
+}
+li{
+    list-style: none;
+}
+.menu:hover, .menu:focus{
+    color:rgb(100, 130, 122);
+    transition: 400ms;
+}
+a {
+    text-decoration: none;
+    color: white
+}
+
+footer{
+    grid-row: 4/5;
+    background-color: rgb(134, 83, 39);
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Vollkorn', serif;
+    font-size: 0.7em;
+    border-radius: 0.3rem;
+}
+.contact{
+    display: flex;
+    padding: 1rem;
+    gap: 0.4rem
+}
+.social{
+    align-self: center;
+    justify-self: start;
+    margin: 0;
+    padding: 0;
+}
+.buttons{
+    display: flex;
+    align-self: center;
+    gap: 1rem;
+    padding: 1rem;
+
+}
+.button1, .button2{
+    background-color: rgb(237, 157, 0);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+
+}
+#button:hover, #button:focus{
+    background-color: rgb(100, 130, 122);
+    transition: 400ms;
+}
+/*main set up*/
+main{
+    margin: 0 auto;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+.hometext{
+    width: 80%;
+    margin: 1rem;
+    margin-bottom: 0rem;
+}
+#hometext{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.gallery{
+    place-self: center;
+    width: 95%;
+    display: flex;
+    margin-top: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+.img1, .img2, .img3, .img4, .img5{
+    width: fit-content;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   overflow: hidden;
+   border: 2px solid rgb(195, 195, 195);
+   border-radius:6px;
+   margin-bottom: 0.5rem;
+   gap: 0.2%; 
+}
+
+.card{
+    margin: 0;
+    padding: 0rem;
+    width: 100%;
+    height: min-content;
+}
+h4{
+    padding: 0;
+    padding-top: 0.5rem;
+    margin: 0;
+    font-weight: 999;
+}
+h4 + p{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 300px;
+    height: 280px;
+    border-radius: 0.2rem;
+}
+/*form set up*/ 
+.formwraper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    align-items: center;
+}
+.formtext{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+form{
+    display: flex;
+    height: min-content;
+    flex-direction: column;
+    align-items: center;
+    gap:0rem;
+    background-color:rgb(244, 244, 244);
+    width: 80%;
+    margin-bottom: 1rem;
+    border-radius: 0.6rem;
+    padding-bottom: 0.5rem;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 40vh;
+    border: none;
+    gap: 2%;
+    font-size: 1rem;
+}
+.fieldset2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.25rem;
+    height: min-content;
+}
+legend{
+    font-weight:999;
+    padding: 0.2rem;
+}
+.colorlink{
+    color:rgb(237, 157, 0);
+    font-weight: bolder;
+}
+.colorlink:focus, .colorlink:hover{
+    color: rgb(100, 130, 122);
+}
+#additional{
+    overflow: auto;
+    resize: both;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    flex: 3 1 50%;   
+
+}
+.formbuttom{
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    
+}
+button{
+    justify-self: center;
+    height: 40px;
+    margin: 2%;
+    cursor: pointer;
+    border: none;
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-weight: bolder;
+    border-radius: 0.2rem;
+    background-image: linear-gradient(to right,  grey, rgb(237, 157, 0)  40% 100%);
+    background-size: 200% ;
+    background-position: 0% 0%;
+    transition: background-position 1s ;
+    font-size: 1.1rem;
+    
+}
+button:hover, button:focus{
+    background-position: 100% 0%;
+}
+.clarification{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.submessage{
+    text-align: center;
+}
+/*donation set up*/
+
+.donationcard{
+display: flex;
+flex-direction: column;
+align-items:center ;
+text-align: center;
+font-size: 1.8rem;
+margin-bottom: 2rem;
+}
+.fund{
+    color: rgb(134, 83, 39) ;
+    border:2px solid rgb(134, 83, 39);
+    border-radius: 0.5rem;
+}
+.fundlink{
+    color: rgb(134, 83, 39);
+}
+.fundlink:hover, .fundlink:focus{
+    color: rgb(100,130,122);
+}
+.fund:hover, .fund:focus{
+    color: rgb(100, 130, 122) ;
+    border:2px solid rgb(100,130,122);
+}
+@media screen and (min-width:620px) {
+    .herotext1{
+        font-size: 2.8em;
+    }
+    .herotext2{
+        font-size: 1.8em;
+    }
+}
